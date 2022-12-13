@@ -4,9 +4,18 @@ import FirstScene from './first-scene';
 import PlayWithDrei from './play-with-drei';
 import { setDocumentTitle } from '../../utils';
 import HowToDebug from './how-to-debug';
+import SphereCubePlane from './sphere-cube-plane';
 
 // 这里想写一种 TS 类型，能够扩展 RouteObject，新增 title: string，目前还没有想到一个好办法
 const routes: RouteObject[] = [
+  {
+    path: 'sphere-cube-plane',
+    element: <SphereCubePlane />,
+    loader: async () => {
+      setDocumentTitle('sphere-cube-plane');
+      return null;
+    },
+  },
   {
     path: 'first-app',
     element: <FirstScene />,
