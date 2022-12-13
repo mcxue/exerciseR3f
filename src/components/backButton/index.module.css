@@ -2,7 +2,7 @@
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 40px;
+  bottom: 40px;
   left: 40px;
   font-size: 13px;
   cursor: pointer;
@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 80%);
+  background: rgba(255, 255, 255, 20%);
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
 }
 .backButton:hover {
