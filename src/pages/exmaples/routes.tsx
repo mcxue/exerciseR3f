@@ -6,6 +6,7 @@ import { setDocumentTitle } from '../../utils';
 import HowToDebug from './how-to-debug';
 import EnvironmentAndStaging from './environment-and-staging';
 import SphereCubePlane from './sphere-cube-plane';
+import LoadModels from './load-models';
 
 // 这里想写一种 TS 类型，能够扩展 RouteObject，新增 title: string，目前还没有想到一个好办法
 const routes: RouteObject[] = [
@@ -46,6 +47,14 @@ const routes: RouteObject[] = [
     element: <EnvironmentAndStaging />,
     loader: async () => {
       setDocumentTitle('environment-and-staging');
+      return null;
+    },
+  },
+  {
+    path: 'load-models',
+    element: <LoadModels />,
+    loader: async () => {
+      setDocumentTitle('load-models');
       return null;
     },
   },
