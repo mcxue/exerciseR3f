@@ -3,6 +3,8 @@ import { useFrame } from '@react-three/fiber';
 import { Perf } from 'r3f-perf';
 import { useEffect, useState, useRef } from 'react';
 import * as THREE from 'three';
+// @ts-ignore
+import helvetikerFont from '/src/assets/fonts/helvetiker_regular.typeface.json'
 
 const torusGeometry = new THREE.TorusGeometry(1, 0.6, 16, 32);
 const material = new THREE.MeshMatcapMaterial();
@@ -41,7 +43,7 @@ export default function Experience() {
     <Center>
       <Text3D
         material={material}
-        font={'/fonts/helvetiker_regular.typeface.json'}
+        font={helvetikerFont}
         size={0.75}
         height={0.2}
         curveSegments={12}

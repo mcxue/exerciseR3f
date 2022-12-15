@@ -9,6 +9,7 @@ import {
   Text,
   Float,
 } from '@react-three/drei';
+import latinFont from '/src/assets/fonts/bangers-v20-latin-regular.woff';
 
 const Experience = () => {
   const cubeRef = useRef<any>();
@@ -53,7 +54,7 @@ const Experience = () => {
         floatIntensity={2}
       >
         <Text
-          font="/fonts/bangers-v20-latin-regular.woff"
+          font={latinFont}
           fontSize={1}
           color="salmon"
           position-y={2}

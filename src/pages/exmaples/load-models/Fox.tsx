@@ -1,11 +1,13 @@
 import { useAnimations, useGLTF } from '@react-three/drei';
 import { useEffect } from 'react';
 import { useControls, button } from 'leva';
+// @ts-ignore
+import foxModel from '/src/assets/models/fox/fox.glb';
 
 const Fox = () => {
-  const fox = useGLTF('/models/fox/fox.glb');
+  const fox = useGLTF(foxModel as string);
   const animations = useAnimations(fox.animations, fox.scene);
-  const { animationName } = useControls( {
+  const { animationName } = useControls({
     animationName: { options: animations.names },
   });
   useEffect(() => {

@@ -7,7 +7,7 @@ import { setDocumentTitle } from '../utils';
 
 const routes: RouteObject[] = [
   {
-    path: '/',
+    path: '/exercise-r3f',
     element: <Home />,
     errorElement: <ErrorPage />,
     loader: async () => {
@@ -16,7 +16,7 @@ const routes: RouteObject[] = [
     },
   },
   {
-    path: '/examples',
+    path: '/exercise-r3f/examples',
     element: <ExamplesRoot />,
     children: exampleRoutes,
   },

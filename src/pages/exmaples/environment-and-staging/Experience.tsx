@@ -16,6 +16,13 @@ import { Perf } from 'r3f-perf';
 import { useControls } from 'leva';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
+// import px from '/src/assets/environmentMaps/2/px.jpg';
+// import nx from '/src/assets/environmentMaps/2/nx.jpg';
+// import py from '/src/assets/environmentMaps/2/py.jpg';
+// import ny from '/src/assets/environmentMaps/2/ny.jpg';
+// import pz from '/src/assets/environmentMaps/2/pz.jpg';
+// import nz from '/src/assets/environmentMaps/2/nz.jpg';
+// import golfEnv from '/src/assets/environmentMaps/limpopo_golf_course_1k.hdr';
 
 // softShadows({
 //   frustum: 3.75,
@@ -70,14 +77,14 @@ const Experience = () => {
       {/*    radius: envMapRadius,*/}
       {/*    scale: envMapScale,*/}
       {/*  }}*/}
-      {/*  // files={'/environmentMaps/limpopo_golf_course_1k.hdr'}*/}
+      {/*  // files={golfEnv}*/}
       {/*  // files={[*/}
-      {/*  //   '/environmentMaps/2/px.jpg',*/}
-      {/*  //   '/environmentMaps/2/nx.jpg',*/}
-      {/*  //   '/environmentMaps/2/py.jpg',*/}
-      {/*  //   '/environmentMaps/2/ny.jpg',*/}
-      {/*  //   '/environmentMaps/2/pz.jpg',*/}
-      {/*  //   '/environmentMaps/2/nz.jpg',*/}
+      {/*  //   px,*/}
+      {/*  //   nx,*/}
+      {/*  //   py,*/}
+      {/*  //   ny,*/}
+      {/*  //   pz,*/}
+      {/*  //   nz,*/}
       {/*  // ]}*/}
       {/*>*/}
       {/*  <color args={['black']} attach="background" />*/}

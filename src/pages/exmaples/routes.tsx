@@ -1,5 +1,4 @@
 import { RouteObject } from 'react-router';
-import Textures from './textures';
 import FirstScene from './first-scene';
 import PlayWithDrei from './play-with-drei';
 import { setDocumentTitle } from '../../utils';
@@ -65,14 +64,6 @@ const routes: RouteObject[] = [
     element: <LoadModels />,
     loader: async () => {
       setDocumentTitle('load-models');
-      return null;
-    },
-  },
-  {
-    path: 'textures',
-    element: <Textures />,
-    loader: async () => {
-      setDocumentTitle('textures');
       return null;
     },
   },
