@@ -1,0 +1,13 @@
+version: "3"
+services:
+  app:
+    build: .
+    labels:
+      - "traefik.http.routers.exercise-r3f.rule=Host(`exercise-r3f.mcxue.cn`)"
+      - "traefik.http.routers.exercise-r3f.tls=true"
+      - "traefik.http.routers.exercise-r3f.tls.certresolver=le"
+
+networks:
+  default:
+    external:
+      name: traefik_default

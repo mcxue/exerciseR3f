@@ -1,0 +1,10 @@
+.rootLayout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.docLayout {
+  display: grid;
+  height: calc(100vh - 84px);
+  grid-template: 1fr / auto 1fr;
+}
+
