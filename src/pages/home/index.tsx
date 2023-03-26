@@ -1,48 +1,23 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import routes from '../../router/routes';
-import { RouteObject } from 'react-router';
-
-const formatToPath = (str: string) => {
-  return /^\/.?/.test(str) ? str : `/${str}`;
-};
-
-const formatRoutesToLinkInfos = (routes: RouteObject[]) => {
-  const linkInfos: { label: string, value: string }[] = [];
-  const formatFn = (routes: RouteObject[], lastPath?: string) => {
-    routes.forEach(route => {
-      if (!route.children) {
-        linkInfos.push({
-          label: (lastPath ? lastPath : '') + formatToPath(route.path || ''),
-          value: (lastPath ? lastPath : '') + formatToPath(route.path || ''),
-        });
-      } else {
-        formatFn(route.children, formatToPath(route.path || ''));
-      }
-    });
-  };
-  formatFn(routes);
-  return linkInfos;
-};
+import style from './index.module.scss';
+import { Button } from 'mcxue-ui';
 
 const Home = () => {
-  const linkInfos = formatRoutesToLinkInfos(routes);
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'flex-start',
-      alignItems: 'center',
-      paddingTop: '50px',
-      width: '100%',
-      height: '500px',
-    }}>
-      <ul>
-        {
-          linkInfos.map(linkInfo => (
-            <li key={linkInfo.value}><Link to={linkInfo.value}>{linkInfo.label}</Link></li>
-          ))
-        }
-      </ul>
+    <div className={style.homeWrapper}>
+      <div className={style.homeMain}>
+        <h1 className={style.title}>Exercise R3F</h1>
+        <p>练习 Three.js，使用 React Three Fiber 写一些 Demo</p>
+        <div className={style.buttonWrapper}>
+          <Link to="/examples/cube-demo">
+            <Button className={style.button} type="plain">看例子</Button>
+          </Link>
+          <Link target="_blank" to="https://github.com/mcxue/exercise-r3f">
+            <Button className={style.button} bgType="filled">Github</Button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

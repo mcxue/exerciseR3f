@@ -33,7 +33,7 @@ export default function Experience() {
 
   return <>
 
-    <Perf position="top-left" />
+    <Perf style={{ top: '81px', left: '369px', right: 'auto' }} />
     <color args={['ivory']} attach="background"/>
     <OrbitControls makeDefault />
 

@@ -1,9 +1,19 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/exercise-r3f/',
+  build: {
+    rollupOptions: {
+      external: ['react', 'react-dom', '@react-three/fiber'],
+      output: {
+        globals: {
+          react: 'react',
+          'react-dom': 'react-dom',
+          '@react-three/fiber': '@react-three/fiber',
+        },
+      },
+    },
+  },
   assetsInclude: ['**/*.glb', '**/*.hdr'],
 });

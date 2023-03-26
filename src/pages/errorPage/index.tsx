@@ -1,25 +1,16 @@
 import { useRouteError } from 'react-router-dom';
+import styles from './index.module.scss';
 
-const ErrorPage = () => {
-  const error = useRouteError() as { data: any, statusText: string; status: string };
-  console.log(error);
+export default function ErrorPage() {
+  const error = useRouteError() as { statusText: string, message: string };
+
   return (
-    <div id="error-page" style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: '100%',
-      height: '500px',
-    }}>
-      <h1>哦吼!</h1>
-      <p>你访问的页面不存在</p>
-      <p>
-        <i>{`${error.status} ${error.statusText}`}</i>
+    <div className={styles.errorPage}>
+      <h1 className={styles.title}>啊哈</h1>
+      <p style={{ padding: '10px' }}>好像发生了未知错误</p>
+      <p style={{ padding: '10px' }}>
+        详情：<i>{error.statusText || error.message}</i>
       </p>
-      <p>{error.data}</p>
     </div>
   );
-};
-
-export default ErrorPage;
+}

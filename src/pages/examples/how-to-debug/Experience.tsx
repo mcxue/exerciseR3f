@@ -47,7 +47,7 @@ const Experience = () => {
   });
   return (
     <>
-      {perfVisible && <Perf position="top-left" />}
+      {perfVisible && <Perf style={{ top: '81px', left: '369px', right: 'auto' }} />}
       <OrbitControls makeDefault />
       <directionalLight position={[1, 2, 3]} intensity={1.5} />
       <ambientLight intensity={0.5} />

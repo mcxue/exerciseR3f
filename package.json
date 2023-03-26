@@ -5,18 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "npm run dev",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "start": "npm run dev"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@react-three/drei": "^9.46.4",
     "@react-three/fiber": "^8.9.1",
     "leva": "^0.9.34",
+    "mcxue-ui": "^0.0.10",
     "r3f-perf": "^6.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.5",
+    "react-router-dom": "^6.9.0",
+    "sass": "^1.60.0",
     "three": "^0.147.0"
   },
   "devDependencies": {

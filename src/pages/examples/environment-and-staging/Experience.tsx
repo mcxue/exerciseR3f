@@ -103,7 +103,7 @@ const Experience = () => {
 
       {/*<BakeShadows />*/}
       {/*<color attach="background" args={['ivory']} />*/}
-      <Perf position="top-left" />
+      <Perf style={{ top: '81px', left: '369px', right: 'auto' }} />
       <OrbitControls makeDefault />
       {/*<AccumulativeShadows*/}
       {/*  position={[0, -0.99, 0]}*/}
