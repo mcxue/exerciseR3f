@@ -1195,10 +1195,10 @@ magic-string@^0.27.0:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.13"
 
-mcxue-ui@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/mcxue-ui/-/mcxue-ui-0.0.10.tgz#df5cc4d83917a4ceea9032412055b298a5786ebc"
-  integrity sha512-6uHK4b0nT44POGYPy83zRMJrlVf/IlIIfWaRuPBG6+mmCohMb7Qo9RNKso2HigQz4FBXE7gNmrnDDphpUH5Z4A==
+mcxue-ui@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.npmjs.org/mcxue-ui/-/mcxue-ui-0.0.11.tgz#388d34124df9fd59d503e1f8454be71a5e0b0047"
+  integrity sha512-lTOubzJN8L2aHgjq2qDIqPbaNWhtoj/YzaDMi9xDIEl+GhJcV/ncTfyjLpKjpcfYb+jLriJxm2hqBxzsLULFhg==
 
 merge-value@^1.0.0:
   version "1.0.0"

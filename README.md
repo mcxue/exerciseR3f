@@ -2,4 +2,4 @@
 
 练习 three.js
 
-demo 链接：[https://exercise-r3f.mcxue.cn](https://exercise-r3f.mcxue.cn)
+demo 链接：[https://exerciser3f.mcxue.cn](https://exerciser3f.mcxue.cn)
