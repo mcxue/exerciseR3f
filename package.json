@@ -7,6 +7,8 @@
     "dev": "vite",
     "start": "npm run dev",
     "build": "tsc && vite build",
+    "deploy": "bash ./scripts/deploy.sh",
+    "publish:html": "yarn build && yarn deploy",
     "preview": "vite preview"
   },
   "dependencies": {

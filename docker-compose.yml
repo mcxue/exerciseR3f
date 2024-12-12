@@ -2,11 +2,11 @@ version: "3"
 services:
   app:
     build: .
-    container_name: exerciseR3f
+    container_name: r3f
     labels:
-      - "traefik.http.routers.exercise-r3f.rule=Host(`exerciser3f.mcxue.cn`)"
-      - "traefik.http.routers.exercise-r3f.tls=true"
-      - "traefik.http.routers.exercise-r3f.tls.certresolver=le"
+      - "traefik.http.routers.r3f.rule=Host(`r3f.mcxue.cn`)"
+      - "traefik.http.routers.r3f.tls=true"
+      - "traefik.http.routers.r3f.tls.certresolver=le"
 
 networks:
   default:
